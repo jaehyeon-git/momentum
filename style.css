@@ -1,0 +1,54 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 가로가 줄어들었을 때, 비율이 망가지는 것 방지 */
+  width: 100%;
+  height: 100vh;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.timer {
+  font-size: 168px;
+  font-weight: 500;
+  line-height: 168px;
+}
+
+.timer-content {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.memo-wrapper {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.memo {
+  font-size: 30px;
+}
+
+.modal-button {
+  /* background: url("./images/001-cloud.png"); */
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
+
+.weather-img {
+  width: 60px;
+  height: 60px;
+}
