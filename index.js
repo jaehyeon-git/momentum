@@ -107,10 +107,10 @@ async function renderWeather() {
 
 async function getWeather(latitude, longitude) {
   if(latitude && longitude) {
-    const data = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${key}`);
+    const data = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${key}`);
     return data;
   }
-  const data = await axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=Seoul&appid=${key}`);
+  const data = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=Seoul&appid=${key}`);
   return data;
 }
 
